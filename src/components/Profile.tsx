@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import anime from 'animejs';
 import profileImg from '../assets/profile.jpg';
 import { Monitor, Palette, Wrench, Database } from 'lucide-react';

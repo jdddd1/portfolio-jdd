@@ -1,10 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import anime from 'animejs';
 import profileImg from '../assets/profile.jpg';
 
 const Hero = () => {
   const heroRef = useRef(null);
-  const textRef = useRef(null);
   const boxesRef = useRef(null);
 
   useEffect(() => {

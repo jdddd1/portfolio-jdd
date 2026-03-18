@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import anime from 'animejs';
-import { Mail, ArrowUpRight, MapPin, Phone, Send, ThumbsUp, Smile, Globe, Eye } from 'lucide-react';
+import { Mail, ArrowUpRight, Send, ThumbsUp, Smile, Globe, Eye } from 'lucide-react';
 
 const Footer = () => {
   useEffect(() => {
