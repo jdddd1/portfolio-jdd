@@ -17,7 +17,7 @@ const Skills = () => {
         if (entry.isIntersecting) {
           anime({
             targets: '.skill-bar-fill',
-            width: (el) => el.getAttribute('data-level') + '%',
+            width: (el: HTMLElement) => el.getAttribute('data-level') + '%',
             delay: anime.stagger(200),
             duration: 1500,
             easing: 'easeInOutQuart'
