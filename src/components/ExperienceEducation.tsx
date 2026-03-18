@@ -57,23 +57,23 @@ const ExperienceEducation = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 bg-white dark:bg-sage-900 px-6">
+    <section id="experience" className="py-24 bg-white px-6">
       <div className="container mx-auto max-w-5xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           
           {/* Experience Section */}
           <div>
-            <h2 className="text-4xl font-bold text-sage-900 dark:text-white mb-16 border-l-8 border-sage-400 pl-6">Experience</h2>
-            <div className="relative border-l border-sage-100 dark:border-sage-700 ml-4 space-y-16 py-4">
+            <h2 className="text-4xl font-bold text-sage-900 mb-16 border-l-8 border-sage-400 pl-6">Experience</h2>
+            <div className="relative border-l border-sage-100 ml-4 space-y-16 py-4">
               {experience.map((item, index) => (
                 <div key={index} className="timeline-item relative pl-12 opacity-0">
-                  <div className="timeline-dot absolute -left-[13px] top-0 w-6 h-6 bg-sage-500 rounded-full border-4 border-white dark:border-sage-900 shadow-md"></div>
+                  <div className="timeline-dot absolute -left-[13px] top-0 w-6 h-6 bg-sage-500 rounded-full border-4 border-white shadow-md"></div>
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                    <h3 className="text-2xl font-bold text-sage-900 dark:text-white leading-tight">{item.title}</h3>
-                    <span className="text-sage-500 dark:text-sage-400 font-semibold tracking-wide text-sm whitespace-nowrap mt-1 sm:mt-0">{item.period}</span>
+                    <h3 className="text-2xl font-bold text-sage-900 leading-tight">{item.title}</h3>
+                    <span className="text-sage-500 font-semibold tracking-wide text-sm whitespace-nowrap mt-1 sm:mt-0">{item.period}</span>
                   </div>
-                  <p className="text-sage-600 dark:text-sage-300 font-medium mb-4 italic">{item.company}</p>
-                  <p className="text-sage-700 dark:text-sage-300 leading-relaxed max-w-lg">{item.desc}</p>
+                  <p className="text-sage-600 font-medium mb-4 italic">{item.company}</p>
+                  <p className="text-sage-700 leading-relaxed max-w-lg">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -81,17 +81,17 @@ const ExperienceEducation = () => {
 
           {/* Education Section */}
           <div>
-            <h2 className="text-4xl font-bold text-sage-900 dark:text-white mb-16 border-l-8 border-sage-200 pl-6">Education</h2>
-            <div className="relative border-l border-sage-100 dark:border-sage-700 ml-4 space-y-16 py-4">
+            <h2 className="text-4xl font-bold text-sage-900 mb-16 border-l-8 border-sage-200 pl-6">Education</h2>
+            <div className="relative border-l border-sage-100 ml-4 space-y-16 py-4">
               {education.map((item, index) => (
                 <div key={index} className="timeline-item relative pl-12 opacity-0">
-                  <div className="timeline-dot absolute -left-[13px] top-0 w-6 h-6 bg-sage-200 rounded-full border-4 border-white dark:border-sage-900 shadow-md"></div>
+                  <div className="timeline-dot absolute -left-[13px] top-0 w-6 h-6 bg-sage-200 rounded-full border-4 border-white shadow-md"></div>
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-                    <h3 className="text-2xl font-bold text-sage-900 dark:text-white leading-tight">{item.title}</h3>
-                    <span className="bg-sage-100 dark:bg-sage-800 text-sage-600 dark:text-sage-300 px-3 py-1 rounded-full text-xs font-bold mt-1 sm:mt-0 uppercase tracking-widest">{item.status}</span>
+                    <h3 className="text-2xl font-bold text-sage-900 leading-tight">{item.title}</h3>
+                    <span className="bg-sage-100 text-sage-600 px-3 py-1 rounded-full text-xs font-bold mt-1 sm:mt-0 uppercase tracking-widest">{item.status}</span>
                   </div>
-                  <p className="text-sage-600 dark:text-sage-300 font-medium mb-4 italic">{item.school}</p>
-                  <p className="text-sage-700 dark:text-sage-300 leading-relaxed max-w-lg">{item.desc}</p>
+                  <p className="text-sage-600 font-medium mb-4 italic">{item.school}</p>
+                  <p className="text-sage-700 leading-relaxed max-w-lg">{item.desc}</p>
                 </div>
               ))}
             </div>

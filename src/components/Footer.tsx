@@ -25,14 +25,14 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer id="contact" className="bg-white dark:bg-sage-900 text-black dark:text-white pt-24 border-t border-black/10 dark:border-white/10 overflow-hidden font-sans">
+    <footer id="contact" className="bg-white text-black pt-24 border-t border-black/10 overflow-hidden font-sans">
       <div className="container mx-auto max-w-7xl px-4">
         
         {/* Landscape Grid Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 border border-black dark:border-white bg-white dark:bg-black mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 border border-black bg-white mb-24">
           
           {/* Get In Touch - Left Side */}
-          <div className="lg:col-span-7 bg-black text-white p-12 lg:p-20 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-black dark:border-white">
+          <div className="lg:col-span-7 bg-black text-white p-12 lg:p-20 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-black">
             <div className="footer-reveal">
               <div className="flex items-center gap-4 mb-8">
                 <Mail size={32} strokeWidth={1} />
@@ -54,11 +54,11 @@ const Footer = () => {
           {/* Right Side - Socials and Info */}
           <div className="lg:col-span-5 flex flex-col">
             {/* Top Row - Status Icons */}
-            <div className="grid grid-cols-2 border-b border-black dark:border-white">
-              <div className="border-r border-black dark:border-white p-12 flex items-center justify-center bg-white dark:bg-black hover:bg-sage-50 dark:hover:bg-sage-900 transition-colors">
+            <div className="grid grid-cols-2 border-b border-black">
+              <div className="border-r border-black p-12 flex items-center justify-center bg-white hover:bg-sage-50 transition-colors">
                 <ThumbsUp size={48} strokeWidth={1} />
               </div>
-              <div className="p-12 flex items-center justify-center bg-white dark:bg-black hover:bg-sage-50 dark:hover:bg-sage-900 transition-colors">
+              <div className="p-12 flex items-center justify-center bg-white hover:bg-sage-50 transition-colors">
                 <Smile size={48} strokeWidth={1} />
               </div>
             </div>
@@ -75,7 +75,7 @@ const Footer = () => {
                href={social.url}
                target="_blank"
                rel="noopener noreferrer"
-               className="footer-reveal border-b last:border-b-0 border-black dark:border-white py-8 px-10 flex justify-between items-center bg-white dark:bg-black hover:bg-gray-50 dark:hover:bg-sage-900 transition-colors cursor-pointer group"
+               className="footer-reveal border-b last:border-b-0 border-black py-8 px-10 flex justify-between items-center bg-white hover:bg-gray-50 transition-colors cursor-pointer group"
              >
                 <span className="text-sm font-bold uppercase tracking-[0.2em]">{social.label}</span>
                 <span className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform opacity-60 group-hover:opacity-100">
@@ -86,11 +86,11 @@ const Footer = () => {
             </div>
 
             {/* Bottom Row - Globe & Copyright */}
-            <div className="grid grid-cols-3 border-t border-black dark:border-white mt-auto">
-               <div className="p-8 border-r border-black dark:border-white flex items-center justify-center">
+            <div className="grid grid-cols-3 border-t border-black mt-auto">
+               <div className="p-8 border-r border-black flex items-center justify-center">
                   <Globe size={32} strokeWidth={1} />
                </div>
-               <div className="col-span-2 p-6 flex flex-col justify-center bg-[#fafafa] dark:bg-black">
+               <div className="col-span-2 p-6 flex flex-col justify-center bg-[#fafafa]">
                   <p className="text-[9px] font-black uppercase tracking-[0.4em] opacity-40 mb-1">© Joshua Dee Tulali 2026</p>
                   <p className="text-[8px] font-bold opacity-30 uppercase tracking-widest">Binan, Philippines</p>
                </div>
@@ -101,7 +101,7 @@ const Footer = () => {
       </div>
 
       {/* Huge Minimalist Background Text */}
-      <div className="relative w-full h-80 overflow-hidden pointer-events-none select-none opacity-[0.07] dark:opacity-[0.03] mt-12">
+      <div className="relative w-full h-80 overflow-hidden pointer-events-none select-none opacity-[0.07] mt-12">
          <div className="absolute bottom-0 left-0 text-[28vw] font-black leading-none whitespace-nowrap tracking-tighter uppercase translate-y-1/4">
             JDTULALI
          </div>

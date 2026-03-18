@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import anime from 'animejs';
-import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,10 +24,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 dark:bg-sage-900/80 backdrop-blur-lg shadow-sm dark:shadow-sage-800 py-4' : 'bg-transparent py-8'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-lg shadow-sm py-4' : 'bg-transparent py-8'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <div className="nav-item">
-          <a href="#" className="text-2xl font-black text-sage-900 dark:text-white tracking-tighter">JD<span className="text-sage-500">.</span></a>
+          <a href="#" className="text-2xl font-black text-sage-900 tracking-tighter">JD<span className="text-sage-500">.</span></a>
         </div>
         
         <div className="hidden md:flex gap-12 items-center">
@@ -36,7 +35,7 @@ const Navbar = () => {
             <a 
               key={item} 
               href={`#${item === 'About' ? 'profile' : item.toLowerCase()}`} 
-              className="nav-item text-sm font-bold uppercase tracking-widest text-sage-900 dark:text-sage-200 hover:text-sage-500 dark:hover:text-white transition-colors"
+              className="nav-item text-sm font-bold uppercase tracking-widest text-sage-900 hover:text-sage-500 transition-colors"
               onClick={(e) => {
                 e.preventDefault();
                 const targetId = item === 'About' ? 'profile' : item.toLowerCase();
@@ -51,9 +50,8 @@ const Navbar = () => {
           ))}
         </div>
         
-        <div className="flex items-center gap-4">
-          <ThemeToggle />
-          <button className="px-6 py-2 bg-sage-900 dark:bg-white text-white dark:text-sage-900 rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 transition-transform">
+        <div className="nav-item">
+          <button className="px-6 py-2 bg-sage-900 text-white rounded-full text-sm font-bold uppercase tracking-widest hover:scale-105 transition-transform">
              Resume
           </button>
         </div>

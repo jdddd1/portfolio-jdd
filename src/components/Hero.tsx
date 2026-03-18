@@ -39,16 +39,16 @@ const Hero = () => {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative min-height-[90vh] flex flex-col items-center justify-center bg-white dark:bg-sage-900 px-6 py-20 overflow-hidden">
+    <section ref={heroRef} className="relative min-height-[90vh] flex flex-col items-center justify-center bg-white px-6 py-20 overflow-hidden">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="z-10 text-left">
           <div className="hero-text overflow-hidden mb-2">
-            <span className="text-sage-600 dark:text-sage-400 font-medium tracking-wider uppercase text-sm">Front-end Developer</span>
+            <span className="text-sage-600 font-medium tracking-wider uppercase text-sm">Front-end Developer</span>
           </div>
-          <h1 className="hero-text text-6xl lg:text-8xl font-bold text-sage-900 dark:text-white leading-tight mb-6">
+          <h1 className="hero-text text-6xl lg:text-8xl font-bold text-sage-900 leading-tight mb-6">
             Joshua Dee <br /> Tulali
           </h1>
-          <p className="hero-text text-lg text-sage-700 dark:text-sage-300 max-w-lg mb-8 leading-relaxed">
+          <p className="hero-text text-lg text-sage-700 max-w-lg mb-8 leading-relaxed">
             Front-end Developer specializing in responsive, user-focused web interfaces. 
             Passionate about translating design into clean, intuitive, and accessible experiences.
           </p>
@@ -56,7 +56,7 @@ const Hero = () => {
             <button className="px-8 py-3 bg-sage-600 text-white rounded-full font-medium hover:bg-sage-700 transition-colors">
               View Work
             </button>
-            <button className="px-8 py-3 border-2 border-sage-600 text-sage-600 dark:text-sage-300 rounded-full font-medium hover:bg-sage-50 dark:hover:bg-sage-800 transition-colors">
+            <button className="px-8 py-3 border-2 border-sage-600 text-sage-600 rounded-full font-medium hover:bg-sage-50 transition-colors">
               Contact Me
             </button>
           </div>
@@ -64,11 +64,11 @@ const Hero = () => {
 
         <div className="relative flex justify-center items-center h-[500px]" ref={boxesRef}>
           {/* Decorative Sage Boxes inspired by the first image */}
-          <div className="hero-box hero-box-float absolute top-0 left-0 w-64 h-48 bg-sage-200 dark:bg-sage-800 rounded-2xl shadow-lg -rotate-6 z-0"></div>
-          <div className="hero-box hero-box-float absolute top-10 right-0 w-72 h-56 bg-sage-300 dark:bg-sage-700 rounded-2xl shadow-xl rotate-3 z-10 flex items-end p-6">
-             <div className="w-full h-2 bg-sage-400 dark:bg-sage-600 rounded-full opacity-50"></div>
+          <div className="hero-box hero-box-float absolute top-0 left-0 w-64 h-48 bg-sage-200 rounded-2xl shadow-lg -rotate-6 z-0"></div>
+          <div className="hero-box hero-box-float absolute top-10 right-0 w-72 h-56 bg-sage-300 rounded-2xl shadow-xl rotate-3 z-10 flex items-end p-6">
+             <div className="w-full h-2 bg-sage-400 rounded-full opacity-50"></div>
           </div>
-          <div className="hero-box hero-box-float absolute bottom-0 left-20 w-80 h-64 bg-sage-100 dark:bg-sage-800 rounded-2xl shadow-2xl -rotate-2 z-20 overflow-hidden border-8 border-white dark:border-sage-900">
+          <div className="hero-box hero-box-float absolute bottom-0 left-20 w-80 h-64 bg-sage-100 rounded-2xl shadow-2xl -rotate-2 z-20 overflow-hidden border-8 border-white">
             <img src={profileImg} alt="Joshua Dee Tulali" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
           </div>
           
@@ -79,10 +79,10 @@ const Hero = () => {
       </div>
       
       {/* Background patterns */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.03] dark:opacity-[0.05] z-0">
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.03] z-0">
         <div className="grid grid-cols-12 h-full w-full">
           {[...Array(12)].map((_, i) => (
-            <div key={i} className="border-r border-sage-900 dark:border-sage-700 h-full"></div>
+            <div key={i} className="border-r border-sage-900 h-full"></div>
           ))}
         </div>
       </div>
