@@ -29,38 +29,38 @@ const UIDesignApproach = () => {
       number: '01',
       title: 'User-Centered',
       desc: 'Every design decision is driven by user needs and feedback. I prioritize usability without compromising aesthetics.',
-      color: 'bg-sage-100',
-      textColor: 'text-sage-900'
+      color: 'bg-sage-100 dark:bg-sage-800',
+      textColor: 'text-sage-900 dark:text-white'
     },
     {
       number: '02',
       title: 'Visual Hierarchy',
       desc: 'Clear visual hierarchy guides users through the interface intuitively, ensuring important elements stand out.',
-      color: 'bg-sage-200',
-      textColor: 'text-sage-900'
+      color: 'bg-sage-200 dark:bg-sage-700',
+      textColor: 'text-sage-900 dark:text-white'
     },
     {
       number: '03',
       title: 'Performance',
       desc: 'Beautiful designs mean nothing without performance. I optimize for speed and smooth interactions.',
-      color: 'bg-sage-300',
+      color: 'bg-sage-300 dark:bg-sage-600',
       textColor: 'text-white'
     },
     {
       number: '04',
       title: 'Accessibility',
       desc: 'Design for everyone. Inclusive design ensures your product is usable by people with varying abilities.',
-      color: 'bg-sage-400',
+      color: 'bg-sage-400 dark:bg-sage-500',
       textColor: 'text-white'
     }
   ];
 
   return (
-    <section id="approach" className="py-24 bg-sage-50 px-6">
+    <section id="approach" className="py-24 bg-sage-50 dark:bg-sage-800 px-6">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-20">
-          <h2 className="text-4xl font-bold text-sage-900 mb-6">UI Design Approach</h2>
-          <p className="text-xl text-sage-700 max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-4xl font-bold text-sage-900 dark:text-white mb-6">UI Design Approach</h2>
+          <p className="text-xl text-sage-700 dark:text-sage-300 max-w-3xl mx-auto leading-relaxed">
             My approach to UI design combines aesthetic appeal with functional excellence. 
             I believe great design is invisible - it works so well that users don't think about it.
           </p>
@@ -70,7 +70,7 @@ const UIDesignApproach = () => {
           {approaches.map((approach, index) => (
             <div 
               key={index} 
-              className={`approach-card group p-8 rounded-3xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col items-start ${approach.color} ${approach.textColor} border border-white/20`}
+              className={`approach-card group p-8 rounded-3xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col items-start ${approach.color} ${approach.textColor} border border-white/20 dark:border-white/10`}
             >
               <div className="text-6xl font-black mb-8 opacity-20 group-hover:opacity-40 transition-opacity">
                  {approach.number}

@@ -40,17 +40,17 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" ref={skillsRef} className="py-24 bg-white px-6">
+    <section id="skills" ref={skillsRef} className="py-24 bg-white dark:bg-sage-900 px-6">
       <div className="container mx-auto max-w-4xl text-center">
-        <h2 className="text-4xl font-bold text-sage-900 mb-16">Tech Stack</h2>
+        <h2 className="text-4xl font-bold text-sage-900 dark:text-white mb-16">Tech Stack</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 text-left">
           {skills.map((skill, index) => (
             <div key={index} className="skill-item">
               <div className="flex justify-between items-center mb-4">
-                <span className="text-lg font-semibold text-sage-800">{skill.name}</span>
-                <span className="text-lg font-bold text-sage-600">{skill.level}%</span>
+                <span className="text-lg font-semibold text-sage-800 dark:text-sage-200">{skill.name}</span>
+                <span className="text-lg font-bold text-sage-600 dark:text-sage-400">{skill.level}%</span>
               </div>
-              <div className="h-4 bg-sage-50 rounded-full overflow-hidden shadow-inner border border-sage-100">
+              <div className="h-4 bg-sage-50 dark:bg-sage-800 rounded-full overflow-hidden shadow-inner border border-sage-100 dark:border-sage-700">
                 <div 
                   className="skill-bar-fill h-full rounded-full shadow-lg"
                   style={{ backgroundColor: skill.color, width: '0%' }}
@@ -61,7 +61,7 @@ const Skills = () => {
               {/* Decorative elements for Anime.js to target */}
               <div className="flex gap-1 mt-2">
                 {[...Array(5)].map((_, i) => (
-                  <div key={i} className="w-1 h-1 bg-sage-200 rounded-full"></div>
+                  <div key={i} className="w-1 h-1 bg-sage-200 dark:bg-sage-700 rounded-full"></div>
                 ))}
               </div>
             </div>

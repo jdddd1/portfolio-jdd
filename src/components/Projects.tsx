@@ -112,12 +112,12 @@ const Projects = () => {
   const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
 
   return (
-    <section id="projects" className="py-24 bg-sage-50 px-6 overflow-hidden">
+    <section id="projects" className="py-24 bg-sage-50 dark:bg-sage-800 px-6 overflow-hidden">
       <div className="container mx-auto max-w-6xl text-center">
-        <h2 className="text-4xl font-bold text-sage-900 mb-16 uppercase tracking-widest">Projects</h2>
+        <h2 className="text-4xl font-bold text-sage-900 dark:text-white mb-16 uppercase tracking-widest">Projects</h2>
         
         <div className="relative max-w-4xl mx-auto group">
-          <div className="overflow-hidden rounded-[40px] shadow-2xl border-8 border-white bg-white" ref={emblaRef}>
+          <div className="overflow-hidden rounded-[40px] shadow-2xl border-8 border-white dark:border-sage-900 bg-white dark:bg-sage-900" ref={emblaRef}>
             <div className="flex touch-pan-y h-[450px]">
               {projects.map((project) => (
                 <div 
@@ -129,7 +129,7 @@ const Projects = () => {
                     <img 
                       src={project.image} 
                       alt={project.title} 
-                      className="w-full h-full object-cover grayscale opacity-40"
+                      className="w-full h-full object-cover grayscale opacity-40 dark:opacity-20"
                     />
                   </div>
 
@@ -150,13 +150,13 @@ const Projects = () => {
 
           <button 
             onClick={scrollPrev}
-            className="absolute -left-6 lg:-left-12 top-1/2 -translate-y-1/2 w-16 h-16 bg-white border border-sage-100 rounded-full flex items-center justify-center text-sage-900 shadow-xl hover:bg-sage-900 hover:text-white transition-all z-10"
+            className="absolute -left-6 lg:-left-12 top-1/2 -translate-y-1/2 w-16 h-16 bg-white dark:bg-sage-800 border border-sage-100 dark:border-sage-700 rounded-full flex items-center justify-center text-sage-900 dark:text-white shadow-xl hover:bg-sage-900 hover:text-white dark:hover:bg-white dark:hover:text-sage-900 transition-all z-10"
           >
             <ArrowLeft size={24} strokeWidth={1.5} />
           </button>
           <button 
             onClick={scrollNext}
-            className="absolute -right-6 lg:-right-12 top-1/2 -translate-y-1/2 w-16 h-16 bg-white border border-sage-100 rounded-full flex items-center justify-center text-sage-900 shadow-xl hover:bg-sage-900 hover:text-white transition-all z-10"
+            className="absolute -right-6 lg:-right-12 top-1/2 -translate-y-1/2 w-16 h-16 bg-white dark:bg-sage-800 border border-sage-100 dark:border-sage-700 rounded-full flex items-center justify-center text-sage-900 dark:text-white shadow-xl hover:bg-sage-900 hover:text-white dark:hover:bg-white dark:hover:text-sage-900 transition-all z-10"
           >
             <ArrowRight size={24} strokeWidth={1.5} />
           </button>
@@ -166,7 +166,7 @@ const Projects = () => {
                <div 
                  key={index}
                  onClick={() => emblaApi && emblaApi.scrollTo(index)}
-                 className={`h-1 transition-all duration-500 cursor-pointer ${index === selectedIndex ? 'w-12 bg-sage-600' : 'w-4 bg-sage-200 hover:bg-sage-300'}`}
+                 className={`h-1 transition-all duration-500 cursor-pointer ${index === selectedIndex ? 'w-12 bg-sage-600 dark:bg-sage-400' : 'w-4 bg-sage-200 dark:bg-sage-700 hover:bg-sage-300 dark:hover:bg-sage-600'}`}
                ></div>
              ))}
           </div>
